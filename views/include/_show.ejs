@@ -1,0 +1,13 @@
+<% for(var i = 0; i < users.length; i++) { %>
+    <tbody>
+    <tr>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].courses %></td>
+    <td><%= users[i].payment %></td>
+    <td>
+        <a href="/update-user?id=<%= users[i]._id%>"><i class="material-icons">edit</i></a> 
+        <a class="delete" data-id=<%= users[i]._id%>><i class="material-icons">delete</i></a>
+    </td>
+  </tr>
+  </tbody>
+  <% } %>

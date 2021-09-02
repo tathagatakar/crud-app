@@ -1,0 +1,56 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+
+
+
+ <div class="back">
+    <a href="/"><i class="material-icons">arrow_back</i> </a>
+</div>
+
+<form method="POST" id="update_user">
+    <div class="newuser">
+
+        <div class="formgroup">
+            <label for="name" class="label">Name:</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="name" value="<%= user.name %>" placeholder="">
+        </div>
+
+        <div class="formgroup">
+            <label for="courses" class="label">courses:</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="courses" value="<%= user.courses %>" placeholder="">
+        </div>
+
+        <div class="formgroup">
+            <label for="payment" class="label">Payment Mode:</label>
+
+            <div class="radioinline">
+                <input type="radio" id="radio-2" name="payment" value="paid" <%= user.payment == 'paid' ? 'checked' : '' %> >
+                <label for="radio-2" class="radio-label">paid</label>
+            </div>
+
+            <div class="radioinline">
+                <input type="radio" id="radio-3" name="payment" value="Not-paid" <%= user.payment == 'Not-paid' ? 'checked' : '' %> >
+                <label for="radio-3" class="radio-label">Not-paid</label>
+            </div>
+        </div>
+
+        <!-- <div class="formgroup">
+            <label for="Date of Transaction" class="label">Date of Transaction:</label>
+            <input type="date" name="date" value="" placeholder="">
+        </div> -->
+
+        <div class="formgroup">
+            <button type="submit" class="btn">Save</button>
+        </div>
+
+    </div>
+</form>
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

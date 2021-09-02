@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<body>
+    <!-- header  -->
+    <div class="beg">
+        <h2>C.R.U.D.</h2>
+    </div>
+
+<!-- main portion  -->
+    <div class="back">
+        <a href="/views/index.html">Back to all users<i class="material-icons">arrow_back</i> </a>
+    </div>
+
+    <form action="/api/users" method="POST" id="add_user">
+        <div class="newuser">
+
+            <div class="formgroup">
+                <label for="name" class="label">Name:</label>
+                <input type="hidden" name="id" value="">
+                <input type="text" name="name" value="" placeholder="Firstname Surname">
+            </div>
+
+            <div class="formgroup">
+                <label for="Course" class="label">Course:</label>
+                <input list="COURSES">
+                <datalist id="COURSES">
+                <option value="C">
+                <option value="C++">
+                <option value="JAVA">
+                <option value="PYTHON">
+                <option value="DATA STRUCTURE & ALGORITHM">
+                <option value="MS OFFICE">
+                <option value="ANDROID DEVELOPMENT">
+                <option value="MONGODB EXPRESS REACT NODEJS">
+                <option value="PLACEMENT SERIES">
+                <option value="MOCK TEST">
+            </div>
+
+            <div class="formgroup">
+                <label for="Phone Number" class="label">Phone Number:</label>
+                <input type="text" name="phonenumber" value="" placeholder="+91..........">
+            </div>
+
+            <div class="formgroup">
+                <label for="payment" class="label">Payment Mode:</label>
+
+                <div class="radioinline">
+                    <input type="radio" id="radio-2" name="payment" value="Cash" >
+                    <label for="radio-2" class="radio-label">Cash</label>
+                </div>
+
+                <div class="radioinline">
+                    <input type="radio" id="radio-3" name="payment" value="Gpay" >
+                    <label for="radio-3" class="radio-label">Gpay</label>
+                </div>
+
+                <div class="radioinline">
+                    <input type="radio" id="radio-3" name="payment" value="NEFT" >
+                    <label for="radio-3" class="radio-label">NEFT</label>
+                </div>
+
+                <div class="radioinline">
+                    <input type="radio" id="radio-3" name="payment" value="NEFT" >
+                    <label for="radio-3" class="radio-label">Cheque</label>
+                </div>
+            </div>
+    
+            <div class="formgroup">
+                <label for="Date of Transaction" class="label">Date of Transaction:</label>
+                <input type="date" name="date" value="" placeholder="">
+            </div>
+    
+            <div class="formgroup">
+                <button type="submit" class="btn">Save</button>
+            </div>
+    
+        </div>
+    </form>
+</body>
+</html>

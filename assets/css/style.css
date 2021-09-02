@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.beg{
+    padding: 20px;
+}
+
+.middle{
+    margin: 20px;
+}
+
+.table{
+    padding: 20px;
+}
+td{
+    padding: 15px;
+    text-align: center;
+}
+th{
+    padding: 20px;
+}
+
+
+
+.back{
+    margin: 20px 60px;
+}
+.newuser
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formgroup{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.radioinline{
+    padding: 15px;
+}
+.label{
+    padding: 3px;
+    font-size: 1.1rem;
+}
+.btn{
+    padding: 10px;
+}
+.delete:hover{
+    cursor: pointer;
+}
